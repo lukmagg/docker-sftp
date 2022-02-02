@@ -1,0 +1,7 @@
+sftp-php-apache-1:
+  image: atmoz/sftp:debian-stretch
+  volumes:
+    - ./data:/home/admin/php-apache-1
+  ports:
+    - "2201:22"
+  command: admin:passwordadmin:1000
